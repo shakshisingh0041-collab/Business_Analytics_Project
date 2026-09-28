@@ -361,9 +361,55 @@ Analytics</h1>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p>This project analyzes campus waste generation and sustainability
-using a simulated dataset. The objective is to identify waste generation
-patterns, evaluate recycling performance, and suggest improvements for
-sustainable campus management.</p>
+using a simulated data set. The objective is to identify waste
+generation patterns, evaluate recycling performance, and suggest
+improvements for sustainable campus management.</p>
+</div>
+<div id="business-analytics-framework" class="section level1">
+<h1>Business Analytics Framework</h1>
+<div id="type-of-analytics" class="section level2">
+<h2>Type of Analytics</h2>
+<p>This project uses <strong>Descriptive Analytics</strong> and
+<strong>Diagnostic Analytics</strong>.</p>
+<p><strong>Descriptive Analytics</strong> is used to summarize and
+understand campus waste generation, recycling performance, and waste
+distribution.</p>
+<p><strong>Diagnostic Analytics</strong> is used to examine differences
+in waste generation across campus buildings and event types and to
+identify areas where recycling and waste segregation can be
+improved.</p>
+</div>
+<div id="specific-business-question" class="section level2">
+<h2>Specific Business Question</h2>
+<p><strong>Which campus buildings and event types generate the most
+waste, and what are the current recycling and waste segregation
+performance levels?</strong></p>
+</div>
+<div id="required-datasets" class="section level2">
+<h2>Required Dataset(s)</h2>
+<p>The project requires campus waste management data containing the
+following variables:</p>
+<ul>
+<li><code>Building</code></li>
+<li><code>Event_Type</code></li>
+<li><code>Total_Waste_kg</code></li>
+<li><code>Recycled_kg</code></li>
+<li><code>Segregation_Rate</code></li>
+</ul>
+<p>The current project uses the simulated dataset:</p>
+<p><code>Campus_Waste_Dataset.csv</code></p>
+</div>
+<div id="plan-to-access-the-datasets" class="section level2">
+<h2>Plan to Access the Dataset(s)</h2>
+<p>For the current project, the dataset will be accessed as a CSV file
+named <code>Campus_Waste_Dataset.csv</code> and loaded into R using
+<code>read.csv()</code>.</p>
+<p>For a real campus implementation, the required data can be collected
+from campus waste collection records, recycling records, building-wise
+waste reports, event-wise waste records, and waste segregation records.
+The data can then be combined into a CSV file with the required
+variables and updated regularly for analysis.</p>
+</div>
 </div>
 <div id="load-dataset" class="section level1">
 <h1>Load Dataset</h1>
@@ -546,10 +592,12 @@ scorecard</code></pre>
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
 <p>The analysis shows that waste generation differs across campus
-buildings and event types. The cafeteria generates the highest amount of
-food waste, while the library produces more paper waste. Recycling
-performance can be improved through better waste segregation and
-awareness campaigns. These findings can help campus management improve
+buildings and event types. The cafeteria generates the highest total
+waste among the campus buildings, with 2065 kg, while seminars generate
+the highest total waste among the event types, with 2083 kg. The average
+recycled waste is 29.883 kg and the average segregation rate is 77.405%.
+These findings provide useful information for campus waste management
+and can help identify areas that require further attention to improve
 sustainability practices.</p>
 </div>
 
